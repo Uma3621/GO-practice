@@ -9,8 +9,25 @@ const (
 	appname     = "uma"      // it's only inside this package as it's starting with lower case
 )
 
-func withparam(p1 string, p2 int) {
+func withparam(p1 string, p2 int) { //with multiple parameter
 	fmt.Println("with parameters ::"+p1, p2)
+}
+
+// age
+func retuningASingleValue() int {
+	return 43
+}
+
+// name and age
+func retuningMultiValues() (string, int) {
+	return "Rao", 43
+}
+
+// name and age
+func retuningMultiValues2() (s string, n int) {
+	s = "Rao"
+	n = 43
+	return
 }
 func main() {
 	const name = "prathyusha"
@@ -19,4 +36,12 @@ func main() {
 	fmt.Println(appname)
 	fmt.Println(DATE_FORMAT)
 	withparam("hi", 66)
+
+	age := retuningASingleValue()
+	fmt.Println("Age:", age)
+
+	a, b := retuningMultiValues()
+	fmt.Println(a, b)
+	a, b = retuningMultiValues2()
+	fmt.Println(a, b)
 }
