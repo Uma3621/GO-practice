@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"main/modules"
 )
 
 const (
@@ -30,6 +31,8 @@ func retuningMultiValues2() (s string, n int) {
 	return
 }
 func main() {
+	modules.Vals()
+	multipleReturnValues() //callig multiplereturnvalues.go
 	const name = "prathyusha"
 	const num = 21 //we can declare and initialize conct without mentioning any type
 	fmt.Println("this is a fucntion")
