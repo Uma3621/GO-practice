@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	rangeover "main/Range"
 	"main/modules"
 )
 
@@ -26,16 +27,18 @@ func retuningMultiValues() (string, int) {
 
 // name and age
 func retuningMultiValues2() (s string, n int) {
-	s = "Rao"
+	s = "R"
 	n = 43
 	return
 }
 func main() {
 	modules.Vals()
+	rangeover.Range()
 	multipleReturnValues() //callig multiplereturnvalues.go
 	const name = "prathyusha"
 	const num = 21 //we can declare and initialize conct without mentioning any type
 	fmt.Println("this is a fucntion")
+	fmt.Println(num, " ", name)
 	fmt.Println(appname)
 	fmt.Println(DATE_FORMAT)
 	withparam("hi", 66)
