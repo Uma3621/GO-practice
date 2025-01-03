@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	rangeover "main/Range"
+	structs "main/Structs"
 	"main/modules"
 )
 
@@ -32,6 +33,8 @@ func retuningMultiValues2() (s string, n int) {
 	return
 }
 func main() {
+	structs.UsingStructs()
+
 	modules.Vals()
 	rangeover.Range()
 	multipleReturnValues() //callig multiplereturnvalues.go
