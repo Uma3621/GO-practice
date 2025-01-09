@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	interfaces "main/Interfaces"
 	rangeover "main/Range"
 	structs "main/Structs"
 	"main/modules"
@@ -33,11 +34,17 @@ func retuningMultiValues2() (s string, n int) {
 	return
 }
 func main() {
+	//interfcaes
+	dog := interfaces.Dog{Name: "Buddy"}
+	cat := interfaces.Cat{Name: "Kitty"}
+
+	interfaces.MakeAnimalSpeak(dog) // Output: Woof!
+	interfaces.MakeAnimalSpeak(cat) // Output: Meow!
 	structs.UsingStructs()
 
 	modules.Vals()
 	rangeover.Range()
-	multipleReturnValues() //callig multiplereturnvalues.go
+	//multipleReturnValues() //callig multiplereturnvalues.go
 	const name = "prathyusha"
 	const num = 21 //we can declare and initialize conct without mentioning any type
 	fmt.Println("this is a fucntion")
