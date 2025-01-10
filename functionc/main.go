@@ -2,11 +2,7 @@ package main
 
 import (
 	"fmt"
-	interfaces "main/Interfaces"
-	rangeover "main/Range"
-	structs "main/Structs"
 	"main/concurrency"
-	"main/modules"
 )
 
 const (
@@ -35,10 +31,12 @@ func retuningMultiValues2() (s string, n int) {
 	return
 }
 func main() {
+
+	concurrency.Funcmain()
 	fmt.Println("starting goroutines example...........")
 	concurrency.DemonstrateConcurrency() //goroutines exp
 	fmt.Println("ending goroutines example...........")
-	//interfcaes
+	/*//interfcaes
 	dog := interfaces.Dog{Name: "Buddy"}
 	cat := interfaces.Cat{Name: "Kitty"}
 
@@ -63,5 +61,5 @@ func main() {
 	a, b := retuningMultiValues()
 	fmt.Println(a, b)
 	a, b = retuningMultiValues2()
-	fmt.Println(a, b)
+	fmt.Println(a, b)*/
 }
