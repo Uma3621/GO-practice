@@ -5,6 +5,7 @@ import (
 	interfaces "main/Interfaces"
 	rangeover "main/Range"
 	structs "main/Structs"
+	"main/concurrency"
 	"main/modules"
 )
 
@@ -34,6 +35,9 @@ func retuningMultiValues2() (s string, n int) {
 	return
 }
 func main() {
+	fmt.Println("starting goroutines example...........")
+	concurrency.DemonstrateConcurrency() //goroutines exp
+	fmt.Println("ending goroutines example...........")
 	//interfcaes
 	dog := interfaces.Dog{Name: "Buddy"}
 	cat := interfaces.Cat{Name: "Kitty"}
