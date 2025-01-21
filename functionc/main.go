@@ -32,10 +32,12 @@ func retuningMultiValues2() (s string, n int) {
 }
 func main() {
 
-	concurrency.Funcmain()
+	concurrency.SelectStatement()
+	/*concurrency.Funcmain()
 	fmt.Println("starting goroutines example...........")
 	concurrency.DemonstrateConcurrency() //goroutines exp
-	fmt.Println("ending goroutines example...........")
+	fmt.Println("ending goroutines example...........")*/
+
 	/*//interfcaes
 	dog := interfaces.Dog{Name: "Buddy"}
 	cat := interfaces.Cat{Name: "Kitty"}
