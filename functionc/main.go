@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"main/concurrency"
+	"main/concurrency/FileHandling"
 )
 
 const (
@@ -33,6 +34,10 @@ func retuningMultiValues2() (s string, n int) {
 func main() {
 
 	concurrency.SelectStatement()
+	fmt.Println("File handling starts here...........")
+
+	FileHandling.Create()
+	FileHandling.Read()
 	/*concurrency.Funcmain()
 	fmt.Println("starting goroutines example...........")
 	concurrency.DemonstrateConcurrency() //goroutines exp
